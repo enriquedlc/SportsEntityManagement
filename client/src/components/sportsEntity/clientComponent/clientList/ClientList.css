@@ -1,0 +1,15 @@
+.h3-client-list {
+    padding-top: 30px;
+    margin: 0;
+    text-align: flex-start;
+    color: #000;
+}
+
+/*========= NEW CLIENT BUTTON =========*/
+
+.new-client-button-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+}

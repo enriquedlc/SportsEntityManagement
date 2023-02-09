@@ -1,0 +1,41 @@
+/*====================
+  	NAVBAR
+*/
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	padding: 0.67rem 1rem;
+	background-color: purple;
+	border-radius: 5px;
+	font-size: 18.5px;
+}
+
+.navbar a {
+	color: #fff;
+	text-decoration: none;
+	margin-left: 10px;
+	font-weight: 600;
+}
+
+.navbar a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+.navbar .logo {
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+
+.nav-link {
+	display: inline-block;
+	padding: 0.5rem 1rem;
+	border-radius: 5px;
+}
+
+.nav-link:hover {
+	background-color: #301934;
+	color: #000;
+}

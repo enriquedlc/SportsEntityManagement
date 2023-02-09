@@ -1,0 +1,257 @@
+:root {
+	--primary-color: dimgray;
+	--background-cell: #ddd;
+	--edit-color: #0d6efd;
+	--delete-color: red;
+	--light-purple: #AC4FC6;
+	--dark-gray: #5C5C5C;
+}
+
+a {
+	color: var(--edit-color);
+	text-decoration: none;
+	margin-right: 0.625rem;
+}
+
+header {
+	padding: 10px 0 10px 5px;
+	background-color: var(--primary-color);
+	color: #fff;
+	font-weight: 600;
+	padding-left: 1rem;
+}
+
+header,
+.row {
+	display: flex;
+}
+
+section {
+	margin-top: 25px;
+}
+
+.col {
+	flex: 1;
+}
+
+.row {
+	background-color: var(--background-cell);
+	padding: .5rem .5rem .5rem 1rem;
+}
+
+.App {
+	margin: 0 auto;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	width: 80%;
+	margin: 10px auto;
+}
+
+.title {
+	margin: 0;
+	padding: 1rem;
+	text-align: center;
+	color: #fff;
+	background-color: var(--primary-color);
+}
+
+.subtitle {
+	padding-left: 1rem;
+}
+
+.btn {
+	display: inline-block;
+	font-weight: 400;
+	text-align: center;
+	vertical-align: middle;
+	border: 1px solid transparent;
+	padding: .75rem 1.5rem;
+	border-radius: .25rem;
+	line-height: 1.5;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.btn-primary {
+	color: #fff;
+	background-color: #0069d9;
+	border-color: #0062cc;
+	padding: 13.3px 27px;
+	font-size: 18px;
+}
+
+.btn-danger {
+	color: #fff;
+	background-color: #c82333;
+	border-color: #dc3545;
+}
+
+/*====================*/
+/*Auxiliars*/
+/*====================*/
+.text-center,
+.centered {
+	text-align: center;
+}
+
+.mb-3 {
+	margin-bottom: 1rem;
+}
+
+.mx-3 {
+	margin-right: 1rem;
+	margin-left: 1rem;
+}
+
+.mr-3 {
+	margin-right: 1rem;
+}
+
+.label-form {
+	display: inline-block;
+	margin-bottom: .8rem;
+}
+
+/*====================*/
+/*Modals              */
+/*====================*/
+.modal-content {
+	width: 80%;
+	margin: 20px auto;
+	background-color: var(--dark-gray);
+	flex-direction: row;
+	border-radius: 8px;
+}
+
+.modal-header {
+	color: #fff;
+	text-align: center;
+	padding: 8px;
+	background-color: var(--light-purple);
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.modal-header h2 {
+	margin: 0;
+}
+
+.modal-body {
+	padding: 15px;
+	font-size: 1.25rem;
+	align-items: center;
+}
+
+.modal-body-info {
+	flex: 1;
+	padding-top: 20px;
+
+}
+
+.form-label {
+	display: inline-block;
+	margin-bottom: .5rem;
+}
+
+.form-control {
+	display: block;
+	width: 70%;
+	height: 30px;
+	font-size: 1rem;
+	margin-bottom: 1rem;
+	border-radius: 5px;
+}
+
+.form-info {
+	color: #000;
+}
+
+
+/*====================*/
+/*		  edit        */
+/*====================*/
+
+.grid-container {
+	display: grid;
+	grid-template-columns: 25% 75%;
+}
+
+.left-table {
+	grid-column: 1 / 2;
+}
+
+.right-component {
+	grid-column: 2 / 3;
+}
+
+
+
+/*====================
+  	Actor list table
+*/
+
+.table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.dark-table {
+	background-color: #333;
+	color: #fff;
+}
+
+
+
+/*
+buttons
+*/
+
+button {
+	background: red;
+	cursor: pointer;
+	border: none;
+	padding: 10px 12px;
+	color: #FFF;
+	font-size: 16px;
+	font-weight: bold;
+	position: relative;
+	border-radius: 12px;
+}
+
+.link-button {
+	background: blue;
+	cursor: pointer;
+	border: none;
+	padding: 10px 12px;
+	color: #FFF;
+	font-size: 16px;
+	font-weight: bold;
+	position: relative;
+	border-radius: 12px;
+}
+
+button::before {
+	content: "";
+	position: relative;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(45deg,
+			#8f00ff, purple, #3137fd, pink,
+			#8f00ff, purple, #3137fd, pink);
+	background-size: 800%;
+	border-radius: 10px;
+	filter: blur(10px);
+	animation: glowing 20s linear infinite;
+}
+
+/* loader */
+
+.loader-container {
+	text-align: center;
+}
